@@ -1,0 +1,478 @@
+Archive member included because of file (symbol)
+
+d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              ./MCAL/DIO/DIO_Prog.o (__udivmodqi4)
+d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./HAL/LCD/LCD_Prog.o (__divmodsi4)
+d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./APP/main.o (__do_copy_data)
+d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/DIO/DIO_Prog.o
+LOAD ./HAL/SSD/SSD_Prog.o
+LOAD ./HAL/PB/PB_Prog.o
+LOAD ./HAL/LED/LED_Prog.o
+LOAD ./HAL/LCD/LCD_Prog.o
+LOAD ./HAL/Buzzer/Buzzer_Prog.o
+LOAD ./APP/Projects/Projects.o
+LOAD ./APP/main.o
+LOAD d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xbf8
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000076        0x8 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007e        0x4 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000007e                __vector_1
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+ .text          0x00000082        0x0 ./MCAL/DIO/DIO_Prog.o
+ .text          0x00000082        0x0 ./HAL/SSD/SSD_Prog.o
+ .text          0x00000082        0x0 ./HAL/PB/PB_Prog.o
+ .text          0x00000082        0x0 ./HAL/LED/LED_Prog.o
+ .text          0x00000082        0x0 ./HAL/LCD/LCD_Prog.o
+ .text          0x00000082        0x0 ./HAL/Buzzer/Buzzer_Prog.o
+ .text          0x00000082        0x0 ./APP/Projects/Projects.o
+ .text          0x00000082        0x0 ./APP/main.o
+ .text          0x00000082        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00000082        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000082        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000082        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000082        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000082                . = ALIGN (0x2)
+ *(.text.*)
+ .text.M_DIO_Void_SetPinDirection
+                0x00000082      0x12a ./MCAL/DIO/DIO_Prog.o
+                0x00000082                M_DIO_Void_SetPinDirection
+ .text.M_DIO_Void_SetPinValue
+                0x000001ac      0x12a ./MCAL/DIO/DIO_Prog.o
+                0x000001ac                M_DIO_Void_SetPinValue
+ .text.M_DIO_Void_TogPin
+                0x000002d6       0x90 ./MCAL/DIO/DIO_Prog.o
+                0x000002d6                M_DIO_Void_TogPin
+ .text.M_DIO_U8_GetPinValue
+                0x00000366       0x72 ./MCAL/DIO/DIO_Prog.o
+                0x00000366                M_DIO_U8_GetPinValue
+ .text.H_SSD_Void_SSDDigitDisplay
+                0x000003d8      0x198 ./HAL/SSD/SSD_Prog.o
+ .text.H_SSD_Void_SSDWriteNumber
+                0x00000570       0x76 ./HAL/SSD/SSD_Prog.o
+                0x00000570                H_SSD_Void_SSDWriteNumber
+ .text.H_SSD_Void_SSDInit
+                0x000005e6       0x32 ./HAL/SSD/SSD_Prog.o
+                0x000005e6                H_SSD_Void_SSDInit
+ .text.H_PB_U8_PBRead
+                0x00000618       0xb8 ./HAL/PB/PB_Prog.o
+                0x00000618                H_PB_U8_PBRead
+ .text.H_PB_Void_PBInit
+                0x000006d0       0x2c ./HAL/PB/PB_Prog.o
+                0x000006d0                H_PB_Void_PBInit
+ .text.H_LED_Void_LedTog
+                0x000006fc       0x26 ./HAL/LED/LED_Prog.o
+                0x000006fc                H_LED_Void_LedTog
+ .text.H_LED_Void_LedSetOff
+                0x00000722       0x2c ./HAL/LED/LED_Prog.o
+                0x00000722                H_LED_Void_LedSetOff
+ .text.H_LED_Void_LedSetOn
+                0x0000074e       0x2c ./HAL/LED/LED_Prog.o
+                0x0000074e                H_LED_Void_LedSetOn
+ .text.H_LED_Void_LedInit
+                0x0000077a       0x2c ./HAL/LED/LED_Prog.o
+                0x0000077a                H_LED_Void_LedInit
+ .text.H_LCD_Void_SetLCDPins
+                0x000007a6       0x3c ./HAL/LCD/LCD_Prog.o
+ .text.H_LCD_Void_LCDWriteCommand
+                0x000007e2       0x64 ./HAL/LCD/LCD_Prog.o
+                0x000007e2                H_LCD_Void_LCDWriteCommand
+ .text.H_LCD_Void_LCDClear
+                0x00000846        0x8 ./HAL/LCD/LCD_Prog.o
+                0x00000846                H_LCD_Void_LCDClear
+ .text.H_LCD_Void_LCDWriteCharacter
+                0x0000084e       0x64 ./HAL/LCD/LCD_Prog.o
+                0x0000084e                H_LCD_Void_LCDWriteCharacter
+ .text.H_LCD_Void_LCDWriteNumber
+                0x000008b2       0xe0 ./HAL/LCD/LCD_Prog.o
+                0x000008b2                H_LCD_Void_LCDWriteNumber
+ .text.H_LCD_Void_LCDWriteString
+                0x00000992       0x2a ./HAL/LCD/LCD_Prog.o
+                0x00000992                H_LCD_Void_LCDWriteString
+ .text.H_LCD_Void_LCDInit
+                0x000009bc       0x5a ./HAL/LCD/LCD_Prog.o
+                0x000009bc                H_LCD_Void_LCDInit
+ .text.H_Buzzer_Void_BuzzerOnce
+                0x00000a16       0x26 ./HAL/Buzzer/Buzzer_Prog.o
+                0x00000a16                H_Buzzer_Void_BuzzerOnce
+ .text.H_Buzzer_Void_BuzzerSetOff
+                0x00000a3c        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x00000a3c                H_Buzzer_Void_BuzzerSetOff
+ .text.H_Buzzer_Void_BuzzerSetOn
+                0x00000a46        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x00000a46                H_Buzzer_Void_BuzzerSetOn
+ .text.H_Buzzer_Void_BuzzerInit
+                0x00000a50        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x00000a50                H_Buzzer_Void_BuzzerInit
+ .text.A_SSDProject
+                0x00000a5a       0x38 ./APP/Projects/Projects.o
+                0x00000a5a                A_SSDProject
+ .text.main     0x00000a92       0xd0 ./APP/main.o
+                0x00000a92                main
+ .text.libgcc   0x00000b62       0x18 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00000b62                __udivmodqi4
+ .text.libgcc   0x00000b7a       0x36 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00000b7a                __divmodsi4
+ .text.libgcc   0x00000bb0        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000bb0        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000bb0       0x44 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000bb0                __udivmodsi4
+                0x00000bf4                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000bf4        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000bf4                exit
+                0x00000bf4                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000bf4        0x4 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000bf8                _etext = .
+
+.data           0x00800060        0x6 load address 0x00000bf8
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO_Prog.o
+ .data          0x00800060        0x0 ./HAL/SSD/SSD_Prog.o
+ .data          0x00800060        0x0 ./HAL/PB/PB_Prog.o
+ .data          0x00800060        0x0 ./HAL/LED/LED_Prog.o
+ .data          0x00800060        0x0 ./HAL/LCD/LCD_Prog.o
+ .data          0x00800060        0x0 ./HAL/Buzzer/Buzzer_Prog.o
+ .data          0x00800060        0x0 ./APP/Projects/Projects.o
+ .data          0x00800060        0x6 ./APP/main.o
+ .data          0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800066                . = ALIGN (0x2)
+                0x00800066                _edata = .
+                0x00800066                PROVIDE (__data_end, .)
+
+.bss            0x00800066        0x0
+                0x00800066                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800066        0x0 ./MCAL/DIO/DIO_Prog.o
+ .bss           0x00800066        0x0 ./HAL/SSD/SSD_Prog.o
+ .bss           0x00800066        0x0 ./HAL/PB/PB_Prog.o
+ .bss           0x00800066        0x0 ./HAL/LED/LED_Prog.o
+ .bss           0x00800066        0x0 ./HAL/LCD/LCD_Prog.o
+ .bss           0x00800066        0x0 ./HAL/Buzzer/Buzzer_Prog.o
+ .bss           0x00800066        0x0 ./APP/Projects/Projects.o
+ .bss           0x00800066        0x0 ./APP/main.o
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800066        0x0 d:/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800066                PROVIDE (__bss_end, .)
+                0x00000bf8                __data_load_start = LOADADDR (.data)
+                0x00000bfe                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800066        0x0
+                0x00800066                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800066                PROVIDE (__noinit_end, .)
+                0x00800066                _end = .
+                0x00800066                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1fa4
+ *(.stab)
+ .stab          0x00000000      0x4a4 ./MCAL/DIO/DIO_Prog.o
+ .stab          0x000004a4      0x660 ./HAL/SSD/SSD_Prog.o
+                                0x6d8 (size before relaxing)
+ .stab          0x00000b04      0x3f0 ./HAL/PB/PB_Prog.o
+                                0x5f4 (size before relaxing)
+ .stab          0x00000ef4      0x24c ./HAL/LED/LED_Prog.o
+                                0x2c4 (size before relaxing)
+ .stab          0x00001140      0x618 ./HAL/LCD/LCD_Prog.o
+                                0x81c (size before relaxing)
+ .stab          0x00001758      0x288 ./HAL/Buzzer/Buzzer_Prog.o
+                                0x498 (size before relaxing)
+ .stab          0x000019e0      0x264 ./APP/Projects/Projects.o
+                                0x468 (size before relaxing)
+ .stab          0x00001c44      0x360 ./APP/main.o
+                                0x570 (size before relaxing)
+
+.stabstr        0x00000000      0xe81
+ *(.stabstr)
+ .stabstr       0x00000000      0xe81 ./MCAL/DIO/DIO_Prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(509_GROUP.elf elf32-avr)
+LOAD linker stubs
