@@ -13,6 +13,8 @@
 #define OUTPUT            1
 #define LOW               0
 #define HIGH              1
+#define DISABLE           0
+#define ENABLE            1
 
 #define PA0_PIN           10
 #define PA1_PIN           11
@@ -57,5 +59,7 @@ void M_DIO_Void_SetPinDirection(u8,u8);
 void M_DIO_Void_SetPinValue(u8,u8);
 void M_DIO_Void_TogPin(u8);
 u8   M_DIO_U8_GetPinValue(u8);
+void M_DIO_Void_SetPinPullUpRes(u8,u8);
+
 
 #endif /* DIO_DIO_INTERFACE_H_ */

@@ -22,10 +22,23 @@ C_DEPS :=
 SUBDIRS := \
 APP/Projects \
 APP \
+HAL/AT24C16A \
 HAL/Buzzer \
+HAL/DCMotor \
+HAL/KeyPad \
 HAL/LCD \
 HAL/LED \
+HAL/LM35 \
 HAL/PB \
 HAL/SSD \
+HAL/Servo \
+MCAL/ADC \
 MCAL/DIO \
+MCAL/EXT_INT \
+MCAL/GIE \
+MCAL/I2C \
+MCAL/SPI \
+MCAL/Timer \
+MCAL/UART \
+MCAL/WDT \
 

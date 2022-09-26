@@ -15,9 +15,12 @@
 #include "LED_Interface.h"
 #include "Buzzer_Interface.h"
 #include "PB_Interface.h"
+#include "LCD_Interface.h"
+#include "UART_Interface.h"
 #include "SSD_Interface.h"
 #include <util/delay.h>
 
 void A_SSDProject(void);
+void A_HC05Project(void);
 
 #endif /* APP_PROJECTS_PROJECTS_H_ */

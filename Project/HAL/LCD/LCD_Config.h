@@ -11,7 +11,7 @@
 /*
  * SELECT LCD_MODE : _4_BIT_MODE , _8_BIT_MODE
  */
-#define LCD_MODE       _4_BIT_MODE
+#define LCD_MODE         _4_BIT_MODE
 
 #define LCD_D0_PIN       PA0_PIN
 #define LCD_D1_PIN       PA1_PIN

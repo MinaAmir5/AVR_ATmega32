@@ -42,6 +42,8 @@ void H_LCD_Void_LCDInit(void)
 	H_LCD_Void_LCDWriteCommand(LCD_4_BIT_MODE_3);
 
 	H_LCD_Void_LCDWriteCommand(LCD_DISPLAY_ON_CURSOR_OFF);
+	H_LCD_Void_LCDWriteCommand(LCD_CLEAR);
+	H_LCD_Void_LCDWriteCommand(LCD_RETURN_HOME);
 #endif
 
 }
@@ -119,6 +121,31 @@ void H_LCD_Void_LCDWriteNumber(s32 Copy_S32_Num)
 
 
 }
+
+
+
+
+
+void H_LCD_Void_LCDGoTo(u8 Copy_U8_Row,u8 Copy_U8_Col)
+{
+	u8 Local_U8Arr [2] = {0x80 , 0xC0};
+	H_LCD_Void_LCDWriteCommand(Local_U8Arr[Copy_U8_Row] + Copy_U8_Col);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void H_LCD_Void_LCDClear(void)
 {
 	H_LCD_Void_LCDWriteCommand(LCD_CLEAR);
